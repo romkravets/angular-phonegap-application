@@ -1,21 +1,93 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+    
+    <mat-sidenav  #sidenav role="navigation">
+     <mat-nav-list>
+      <a mat-list-item>
+        <mat-icon class="icon">input</mat-icon>
+        <span class="label">Login</span>
+      </a>
+      <a mat-list-item
+          routerLink="/">
+        <mat-icon class="icon">home</mat-icon>
+          <span class="label">Home</span>
+      </a>
+      <a mat-list-item
+        routerLink="/dashboard">
+        <mat-icon class="icon">dashboard</mat-icon>
+        <span class="label">Dashboard</span>
+      </a>
+      <a  mat-list-item
+          type="button">
+        <mat-icon class="icon">input</mat-icon>
+        <span class="label">LogOut</span>
+      </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="adobe">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="16" viewBox="0 0 70 16"><path fill="#fff" d="M12.1 0h7.1v16l-7.1-16zm-5 0h-7.1v16l7.1-16zm2.5 5.9l4.5 10.1h-3l-1.3-3.2h-3.3l3.1-6.9zm19.4 3.9l-1.2 3.3c0 .1-.1.1-.1.1h-1.1c-.1 0-.1-.1-.1-.1 1-2.5 2.6-6.9 3.7-9.7.1-.1.1-.3.1-.7 0-.1 0-.1.1-.1h1.6c.1 0 .1 0 .1.1l3.9 10.4c0 .1 0 .1-.1.1h-1.3c-.1 0-.1 0-.1-.1l-1.3-3.4-4.2.1zm3.8-1.2c-.4-1-1.3-3.8-1.7-4.9-.3 1-1.1 3.1-1.6 4.9h3.3zm3.9.8c0-2.4 1.8-4.1 4.4-4.1.5 0 .9 0 1.3.2v-3.7c0-.1 0-.1.1-.1h1.3c.1 0 .1 0 .1.1v10.7c0 .1 0 .1-.1.2-1 .5-2 .8-3 .8-2.4-.1-4.1-1.5-4.1-4.1zm5.7-2.8c-.3-.2-.8-.2-1.3-.2-1.8 0-2.9 1.2-2.9 2.9 0 2.2 1.3 2.9 2.7 2.9.6 0 1.1-.1 1.4-.2l.1-5.4zm10.7 2.7c0 2.4-1.5 4-3.9 4-2.8 0-3.9-2.1-3.9-4 0-2.4 1.5-4 3.9-4 2.6 0 3.9 1.7 3.9 4zm-6.2 0c0 1.7.9 3 2.5 3 1.2 0 2.3-.8 2.3-2.9 0-1.6-.7-3-2.4-3-1.4-.1-2.4 1-2.4 2.9zm9.2-7.6l.1 4c.7-.3 1.3-.5 2-.5 2.2 0 3.6 1.6 3.6 3.7 0 2.8-2.2 4.4-4.6 4.4-.9 0-1.5-.1-2.3-.4-.1 0-.1-.1-.1-.2v-11c0-.1 0-.1.1-.1h1.2v.1zm1.8 4.7c-.7 0-1.3.1-1.7.4v5.3c.4.1.8.1 1.2.1 1.4 0 3-1 3-3.2 0-1.6-.9-2.6-2.5-2.6zm6.7 3c0 1.6.9 2.7 2.7 2.7.7 0 1.3-.1 2-.5.1 0 .1 0 .1.1v.9c0 .1 0 .1-.1.2-.6.3-1.3.5-2.3.5-2.9 0-3.9-2-3.9-4 0-2.4 1.3-4 3.7-4 2.3 0 3.2 1.8 3.2 3.1 0 .7-.1.8-.1.9-.3.1-.9.1-1.7.1h-3.6zm3-.8c.8 0 1-.1 1-.1v-.3c0-.6-.4-1.9-1.9-1.9-1.3 0-2 1-2.1 2.3h3z"></path></svg>
+        </div>
+    </mat-sidenav-content>
+    <mat-sidenav-content>
+
+            <mat-toolbar color="primary">
+                <div fxHide.gt-xs>
+                  <button mat-icon-button (click)="sidenav.toggle()">
+                   <mat-icon>menu</mat-icon>
+                 </button>
+               </div>
+                <div>
+                    <a routerLink="/">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="44" viewBox="0 0 40 44"><path d="M11.8 28.4l-1.6.1v.7c0 1.9 1.1 2.3 2 2.3h.2l2.6-.2c.1-.3.1-.5.1-.5s-.3-16.3-.4-18.3c0-.5-.1-.8-.3-1.1-.9-.1-1.8-.1-2.4-.2h-.3c-.6 0-1.1.2-1.4.5-.5.5-.4 1.2-.4 1.2v1.2c1.3.1 2.2.1 2.2.1s1.4.3 1.5 1.8c.1 1.6.1 10.6.1 10.6s.1 1.5-1.9 1.8zm-5 .4l-2.5.2s-2.1.3-2.2-2c0-1.7-.2-11.5-.2-11.5s-.1-1.8 2.1-1.7c.7 0 1.6.1 2.7.2 0-1.6-.1-3-.1-4.1-1.5-.2-2.8-.3-3.7-.4-2.9-.3-2.8 2.1-2.8 2.1s.3 17.9.4 20.1c.1 2.6 2.9 2.2 2.9 2.2l3.5-.4c0-1.2 0-2.9-.1-4.7zm31.1-22.3c-.1-3.4-3.1-4.1-3.1-4.1s-10.2-1.5-14.7-2.1c-4.5-.6-4.2 3.8-4.2 3.8s1 31.7 1.1 35.6c.1 4.7 4.5 3.9 4.5 3.9l15.4-2.6c2.8-.6 2.9-4.1 2.9-4.1s-1.8-26.7-1.9-30.4zm-3.4 26.9l-11.5 1.2s-3.3.5-3.4-3.6c-.1-3-.7-20.1-.7-20.1s-.2-3.1 3.2-2.9c3.5.3 11.9 1 11.9 1s2.2.5 2.3 3.1c.1 2.8 1.1 18.3 1.1 18.3s.2 2.5-2.9 3zm-11.6.6l4.4-.5c-.2-4.5-1-22-1.1-24.5-1.6-.1-3.1-.2-4.2-.3h-.3c-.7 0-1.3.2-1.7.6-.6.6-.6 1.7-.6 1.7v.3c1.8.2 3.2.3 3.2.3s1.9.4 2 2.5c.1 2.3.6 14.7.6 14.7s.2 2.1-2.5 2.5l-2.6.2c.2 2.1 1.4 2.6 2.4 2.6.3-.1.4-.1.4-.1zm-6.7-2.2l-3.6.3s-2.9.4-2.9-2.9c0-2.4-.3-16.3-.3-16.3s-.2-2.6 2.8-2.4c.9.1 2.1.2 3.4.3-.1-2.6-.2-4.7-.2-5.8-1.7-.2-3.4-.3-4.6-.5-3.9-.4-3.7 3-3.7 3s.4 25.5.5 28.6c.1 3.7 3.9 3.1 3.9 3.1l4.9-.6c-.1-1.4-.1-3.8-.2-6.8z" fill="#fff"></path></svg>
+                     <span>Adobe PhoneGap</span>
+                  </a>
+                </div>
+                <div fxFlex fxLayout fxLayoutAlign="flex-end"  fxHide.xs>
+                   <ul fxLayout fxLayoutGap="20px" class="navigation-items">
+                       <!-- <li>
+                           <a>
+                             <mat-icon class="icon">input</mat-icon>
+                             <span  class="label">Login</span>
+                            </a>
+                       </li> -->
+                       <li>
+                         <a
+                           routerLink="/">
+                             <span class="label">Home</span>
+                         </a>
+                       </li>
+                       <li>
+                           <a
+                             routerLink="/started">
+                               <span class="label">Get Started</span>
+                           </a>
+                         </li>
+                         <li>
+                             <a
+                               routerLink="/dashboard">
+                                 <span class="label">Docs</span>
+                             </a>
+                         </li>
+                       <li>
+                           <a
+                             routerLink="/showcase">
+                               <span class="label">App Showcase</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a
+                             routerLink="/blog">
+                               <span class="label">Blog</span>
+                           </a>
+                       </li>
+         
+                   </ul>
+                </div>
+               </mat-toolbar>
+
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
