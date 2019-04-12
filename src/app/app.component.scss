@@ -1,5 +1,15 @@
+@import './styles/variables.scss';
 mat-sidenav-container, mat-sidenav-content, mat-sidenav {
    height: 100%;
+ }
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  padding: 0 8rem;
+ }
+
+ a[_ngcontent-c0]:hover, a[_ngcontent-c0]:active {
+   border-bottom: 1px solid #fff;
+   padding-bottom: 0.5rem;
  }
 
  .adobe {
@@ -7,6 +17,22 @@ mat-sidenav-container, mat-sidenav-content, mat-sidenav {
    display: flex;
    z-index: 11;
  }
+
+ .global-nav {
+   &__logo {
+     padding-left: 1rem;
+     margin-top: 10px;
+     font-size: 1.5rem;
+     font-weight: 300;
+   }
+   &__logo-link {
+     
+   }
+   &__items {
+     font-weight: 300;
+     font-size: 1rem;
+   }
+}
 
  .mat-toolbar.mat-primary {
    background-color: #27a1c5;
