@@ -1,0 +1,51 @@
+@import '../styles/variables.scss';
+.latest-blog {
+   text-align: center;
+   width: 100%;
+   padding: 20px 0;
+   margin: 0 auto;
+   &__description {
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+   }
+   &__title {
+      font-size: 1.2rem;
+      font-weight: 600;
+   }
+   &__text {
+      font-weight: 600;
+   }
+   &__more {
+      font-weight: 500;
+   }
+   &__left {
+      text-align: left;
+      max-width: 525px;
+      padding: 0 10px 14px;
+      border-right: 1px solid rgb(63, 173, 207);
+   }
+   &__right {
+      text-align: left;
+      max-width: 525px;
+      padding: 0 10px 14px;
+   }
+   &__date {
+      text-align: right;
+      line-height: 1.25rem;
+      font-size: 1.25rem;
+      margin: 3px 32px 0 20px;
+      flex-shrink: 0;
+
+   }
+   &__month {
+      display: block;
+   }
+   &__day {
+      display: block;
+      line-height: 2.5rem;
+      font-size: 2.5rem;
+   }
+   &__year {
+      display: block;
+   }
+}

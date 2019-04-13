@@ -1,0 +1,16 @@
+.documentation {
+   background-color: rgb(221, 236, 241);
+   margin-bottom: 35px;
+   text-align: center;
+   &__title {
+      font-size: 1.875rem;
+      font-weight: 300;
+      margin-top: 1.875rem;
+      margin-bottom: 1.25rem;
+   }
+   &__text {
+      padding: 0 2rem;
+      font-size: 1rem;
+      font-weight: 600
+   }
+}

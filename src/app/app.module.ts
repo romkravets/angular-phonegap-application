@@ -13,6 +13,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { BenefitsComponent } from './benefits/benefits.component';
+import { ToolsComponent } from './tools/tools.component';
+import { DocumentationComponent } from './documentation/documentation.component';
+import { LatestBlogComponent } from './latest-blog/latest-blog.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { BenefitsComponent } from './benefits/benefits.component';
     WelcomeComponent,
     DashboardComponent,
     HeaderComponent,
-    BenefitsComponent
+    BenefitsComponent,
+    ToolsComponent,
+    DocumentationComponent,
+    LatestBlogComponent
   ],
   imports: [
     BrowserModule,
