@@ -16,6 +16,10 @@ import { BenefitsComponent } from './benefits/benefits.component';
 import { ToolsComponent } from './tools/tools.component';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { LatestBlogComponent } from './latest-blog/latest-blog.component';
+import { GetStartedComponent } from './pages/get-started/get-started.component';
+import { DocsComponent } from './pages/docs/docs.component';
+import { ShowAppComponent } from './pages/show-app/show-app.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { LatestBlogComponent } from './latest-blog/latest-blog.component';
     BenefitsComponent,
     ToolsComponent,
     DocumentationComponent,
-    LatestBlogComponent
+    LatestBlogComponent,
+    GetStartedComponent,
+    DocsComponent,
+    ShowAppComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
