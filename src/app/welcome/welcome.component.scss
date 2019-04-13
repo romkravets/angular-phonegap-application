@@ -1,16 +1,16 @@
 @import '../styles/variables.scss';
-
 .welcome {
-   padding-top: 3rem;
+   padding-top: 2rem;
    display: flex;
    flex-direction: column;
    widows: 100%;
+   max-height: 800px;
    margin-bottom: 64px;
    background-color: $base-color;
    font-family: 'Nunito', sans-serif;
    position: relative;
    &__left {
-      padding-top: 9rem;
+      padding-top: 12rem;
       position: relative;
    }
    &__title {
@@ -53,11 +53,11 @@
       padding-bottom: 3px;
    }
    &__right {
-      top: 0;
+      & svg {
+         padding-top:3rem;
+      }
    }
-   
 }
-
 .create-section {
    text-align: center;
    width: 100%;
