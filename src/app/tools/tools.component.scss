@@ -15,7 +15,7 @@
          width: 44px;
          background: url(../../assets/images/cross-hairs.svg) no-repeat;
          background-size: contain;
-         z-index: 11;
+         z-index: 9;
       }
       &:after {
          content: "";
@@ -26,7 +26,7 @@
          width: 44px;
          background: url(../../assets/images/cross-hairs.svg) no-repeat;
          background-size: contain;
-         z-index: 11;
+         z-index: 9;
       }
    }
    &__item {
