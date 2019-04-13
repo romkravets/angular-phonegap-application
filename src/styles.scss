@@ -7,9 +7,31 @@
    box-sizing: border-box;
 }
 
+html {
+   font-size: 16px;
+}
+
 body {
-   
    margin: 0;
    padding: 0;
    font-family: 'Nunito', sans-serif;
+   line-height: 1.75rem;
+}
+
+a {
+   background-color: transparent;
+   color: rgb(39, 161, 197);
+   text-decoration: none;
+}
+
+a:active, a:hover {
+   outline: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(39, 161, 197);
+}
+a:active, a:hover {
+    outline: 0;
 }

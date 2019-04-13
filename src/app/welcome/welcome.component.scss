@@ -1,24 +1,120 @@
 @import '../styles/variables.scss';
 
 .welcome {
-   padding-top: 7rem;
+   padding-top: 3rem;
    display: flex;
    flex-direction: column;
    widows: 100%;
-   height: 400vh;
+   margin-bottom: 64px;
    background-color: $base-color;
    font-family: 'Nunito', sans-serif;
+   position: relative;
    &__left {
-      padding-top: 7rem;
+      padding-top: 9rem;
+      position: relative;
    }
    &__title {
       font-size: 2.5rem;
       text-align: left;
       font-weight: 300;
       position: relative;
+      margin-bottom: 48px;
+      position: relative;
    }
    &__btn-box {
       text-align: left;
    }
+   &__btn-start {
+      border-radius: 4px;
+      background-color: $btn-start;
+      color: $white-color;
+      text-transform: uppercase;
+      border: none;
+      font-size: 1rem;
+      font-weight: normal;
+      padding: 13px 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 26px;
+      &:hover {
+         text-decoration: none;
+         background-color: $btn-start-active;
+      }
+      &:active {
+         background-color: rgb(235, 56, 84);
+      }
+   }
+   &__btn-learn-more {
+      text-transform: uppercase;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      font-size: 1.0625rem;
+      padding-bottom: 3px;
+   }
+   &__right {
+      top: 0;
+   }
    
+}
+
+.create-section {
+   text-align: center;
+   width: 100%;
+   z-index: 2;
+   padding: 20px 0;
+   background-color: rgba(22,146,178,0.9);
+   position: absolute;
+   margin: 0 auto;
+   top: 33.5rem;
+   &__left {
+      color: $white-color;
+      text-align: center;
+      max-width: 525px;
+      padding: 0 10px 14px;
+      border-right: 1px solid rgb(63, 173, 207);
+   }
+   &__right {
+      color: $white-color;
+      text-align: center;
+      max-width: 525px;
+      padding: 0 10px 14px;
+   }
+   &__btn-next {
+      color: rgb(3, 51, 81);
+      font-weight: 400;
+      border-radius: 18px;
+      background-color: $white-color;
+      text-transform: uppercase;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      height: 36px;
+      box-sizing: border-box;
+      padding-top: 4px;
+      padding-right: 15px;
+      padding-bottom: 2px;
+      padding-left: 15px;
+      // padding-right: 31px;
+      font-size: 1.125rem;
+      text-align: center;
+      // &:after {
+      //    background-image: url();
+      //    background-repeat: no-repeat;
+      //    background-position: center;
+      //    content: ">";
+      //    position: absolute;
+      //    // right: 15px;
+      //    top: 79px;
+      //    height: 100%;
+      //    width: 7px;
+      // }
+      &:hover {
+         text-decoration: none;
+         background: rgb(242, 167, 0);
+      }
+      &:active {
+         background: rgb(235, 56, 84);
+      }
+   }
 }
