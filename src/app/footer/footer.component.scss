@@ -1,0 +1,77 @@
+.footer {
+   padding-top: 4rem;
+   padding-bottom: 1rem;
+   background-color: rgb(0, 50, 82);
+   color: rgb(255, 255, 255);
+   &__nav-title {
+      text-align: left;
+      font-size: 1.2rem;
+      color: rgb(196, 196, 196);
+   }
+   &__nav-items {
+      list-style: none;
+      text-align: left;
+   }
+   &__nav-item {
+      text-align: left;
+   }
+   &__nav-link {
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+      font-size: 0.9rem;
+   }
+   &__subscribe {
+      padding-left: 2.5rem;
+      padding-top: 17px;
+   }
+   &__title {
+      color: rgb(196, 196, 196);
+      text-transform: uppercase;
+      font-size: 1rem;
+   }
+   &__text {
+      font-size: 0.8rem;
+   }
+   &__form {
+      padding-top: 20px;
+      padding-right: 10px;
+      &__text-input {
+         width: 75%;
+         background-color: rgb(100, 136, 155);
+         border: none;
+         height: 2.75rem;
+         box-sizing: border-box;
+         border-radius: 4px;
+         vertical-align: top;
+         flex-grow: 1;
+         margin-right: 10px;
+         padding: .75rem 1rem .8125rem;
+      }
+      &__submit {
+         text-transform: uppercase;
+         font-size: 1.0625rem;
+         height: 2.75rem;
+         box-sizing: border-box;
+         padding: .625rem 1.5625rem .6875rem;
+         border-radius: 4px;
+         background: rgb(26, 160, 197);
+         border: none;
+         vertical-align: top;
+      }
+   }
+   &__hr {
+      border: 0;
+      height: 1px;
+      background: rgb(0, 24, 53);
+      margin: 43px 0;
+   }
+   &__copyright {
+      padding-left: 2.5rem;
+      font-size: .75rem;
+      line-height: .875rem;
+   }
+}
+
+::-webkit-input-placeholder {
+   color: #003351;
+}

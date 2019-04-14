@@ -20,6 +20,8 @@ import { GetStartedComponent } from './pages/get-started/get-started.component';
 import { DocsComponent } from './pages/docs/docs.component';
 import { ShowAppComponent } from './pages/show-app/show-app.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { ShowCaseComponent } from './show-case/show-case.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { BlogComponent } from './pages/blog/blog.component';
     GetStartedComponent,
     DocsComponent,
     ShowAppComponent,
-    BlogComponent
+    BlogComponent,
+    ShowCaseComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
