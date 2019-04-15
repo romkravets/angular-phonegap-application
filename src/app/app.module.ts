@@ -22,6 +22,7 @@ import { ShowAppComponent } from './pages/show-app/show-app.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ShowCaseComponent } from './show-case/show-case.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { FooterComponent } from './footer/footer.component';
     ShowAppComponent,
     BlogComponent,
     ShowCaseComponent,
-    FooterComponent
+    FooterComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

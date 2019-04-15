@@ -6,14 +6,16 @@ import { GetStartedComponent } from './pages/get-started/get-started.component';
 import { DocsComponent } from './pages/docs/docs.component';
 import { ShowAppComponent } from './pages/show-app/show-app.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 const routes: Routes = [
   {path: '', component: WelcomeComponent},
-  {path: 'dashboard', component: DashboardComponent},
+  {path: 'products', component: ProductsComponent},
   {path: 'get-started', component: GetStartedComponent},
   {path: 'docs', component: DocsComponent},
   {path: 'show-app', component: ShowAppComponent},
-  {path: 'blog', component: BlogComponent}
+  {path: 'blog', component: BlogComponent},
+  {path: 'dashboard', component: DashboardComponent}
 ];
 
 @NgModule({
