@@ -28,8 +28,9 @@
       </div>
   </mat-sidenav-content>
   <mat-sidenav-content>
-
-          <mat-toolbar color="primary" class="global-nav">
+    <div class="global-nav" #stickyMenu
+    [class.sticky] = "sticky">
+          <mat-toolbar color="primary">
               <div fxHide.gt-xs>
                 <button mat-icon-button (click)="sidenav.toggle()">
                  <mat-icon>menu</mat-icon>
@@ -82,6 +83,7 @@
                  </ul>
               </div>
              </mat-toolbar>
+            </div>
     <main>
       <router-outlet></router-outlet>
     </main>

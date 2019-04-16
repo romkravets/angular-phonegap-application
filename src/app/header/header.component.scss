@@ -87,3 +87,11 @@ mat-sidenav-container, mat-sidenav-content, mat-sidenav {
    margin: 0;
    width: 85%;
  }
+
+ .sticky{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+  background-color: #fff;
+}
